@@ -25,5 +25,14 @@ public class Shelter {
 		dog1.printInfo();
 		dog2.printInfo();
 		
+		double price=dog1.getPrice();
+		System.out.println(price);
+		
+		float price2=dog2.getPrice();
+		System.out.println(price2);
+		
+		System.out.println(dog1.bark());
+		System.out.println(dog2.bark());
+		
 	}
 }
