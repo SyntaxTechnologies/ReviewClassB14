@@ -6,14 +6,18 @@ public class Shelter {
 		
 		//acessing static - use class name
 		Dog.breed="Huskey";
+		
+		
 		Dog dog1=new Dog();
+		
+		
 		//how to access instance variables? - through object variable
 		dog1.name="Bobby";
 		dog1.weight=5;
 		dog1.printInfo();
 		
 		Dog dog2=new Dog();
-		System.out.println(dog2.name);
+		System.out.println(dog2.name); //null
 		dog2.name="Tommy";
 		dog2.weight=10;
 		dog2.printInfo();
@@ -33,6 +37,9 @@ public class Shelter {
 		
 		System.out.println(dog1.bark());
 		System.out.println(dog2.bark());
+		
+		dog1.love("to jump");
+		dog2.love("to play");
 		
 	}
 }

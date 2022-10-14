@@ -6,8 +6,15 @@ public class Dog {
 	int weight; //instance variable
 	static String breed; //static
 	
+	// when we do not create a constructor ->
+	// compiler creates a default constructor for us
+	
 	void printInfo() {
 		System.out.println("Dog features:"+name+", "+weight+", "+breed);
+	}
+	
+	void love(String thing) {
+		System.out.println(name+" loves "+thing);
 	}
 	
 	// create a method to return price
@@ -26,7 +33,6 @@ public class Dog {
 	}
 	
 	// create a method that will return bark type
-	
 	// if weight is more less than 5 --> loud
 	// if weight less 20 -> noise is wooh
 	// if weight is less 500 > noise Gav gav
@@ -56,9 +62,6 @@ public class Dog {
 	 * 
 	 * returnType    name
 	 *   void      printInfo
-	 * 
-	 * 
-	 * 
 	 */
 	
 }
