@@ -13,8 +13,27 @@ public class School {
 		Teacher t2=new Teacher("Jack", "Smith", 5);
 		
 		Teacher.school="Syntax";
-		Teacher.work();
+		
+		Teacher.work(); //public
+		t2.print(); //protected
+		t2.teach(); //default
+		// t2.getBonus(); methodfrom the type Teacher is not visible
+		
+		
+		/* variables syntax
+		 * 
+		 *    OPTIONAL        OPTIONAL            MUST     MUST
+		 * accessModifier   nonAccessModifier   dataType   name
+		 *     public           static            String   breed;
+		 * 
+		 
+		 //public ->protected->default->private
+		 
+		 * method syntax
+		 * 	   OPTIONAL           OPTIONAL          MUST       MUST
+		 *  accessModifier   nonAccessModifier   returnType    name
+		 *      public          static            void      printInfo
+		 */
 		
 	}
-
 }

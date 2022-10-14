@@ -2,21 +2,22 @@ package review3;
 
 public class Teacher {
 	
-	String name, lname;
-	String subject;
+	public String name, lname;
+	protected String subject;
 	int experience;
-	double salary;
-	static String school;
+	private double salary;
+	
+	public static String school;
 	
 	//this. - use to refer to the current object : instance variables
 											//      instance methods
-	Teacher(String name, String lname){
+	public Teacher(String name, String lname){
 		this.name=name;
 		this.lname=lname;
 	}
 	
 	//this() - refers to the current object : current class constructor
-	Teacher(String name, String lname, String subject) {
+	protected Teacher(String name, String lname, String subject) {
 		this(name, lname); //Constructor call must be the first statement in a constructor
 		this.subject=subject;
 	}
@@ -27,11 +28,11 @@ public class Teacher {
 	}
 	
 	//static can work only with static
-	static void work() {
+	public static void work() {
 		System.out.println("All teachers work at "+school);
 	}
 	//instance member of the class can work with instance and static members
-	void print() {
+	protected void print() {
 		work();
 		System.out.println("Taecher name is "+name+" "+lname);
 	}
@@ -42,7 +43,7 @@ public class Teacher {
 	}
 	
 	//method that will calculate bonus based on experience and return it
-	double getBonus() {
+	private double getBonus() {
 		if(experience<5) {
 			return 3;
 		}else {
