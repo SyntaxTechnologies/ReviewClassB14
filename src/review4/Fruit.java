@@ -18,8 +18,12 @@ public class Fruit {
 		this.color=color;
 	}
 	
-	public void grow() {
+	void grow() {
 		System.out.println("All fruits grow fresh "+fresh);
+	}
+	
+	public static void havePeel() {
+		System.out.println("All fruits need to be peeled");
 	}
 	
 	protected void haveBenefits() {
