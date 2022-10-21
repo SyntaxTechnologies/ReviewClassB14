@@ -7,7 +7,7 @@ public class Country {
 	int population;
 	private String president;
 	
-	Country(String name){
+	protected Country(String name){
 		this.name=name;
 	}
 }
