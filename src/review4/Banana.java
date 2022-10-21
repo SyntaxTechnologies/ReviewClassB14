@@ -55,5 +55,7 @@ public class Banana extends Fruit{
 		fruit.grow(); // runtime polymorphism
 		fruit.haveBenefits();
 		
+		Fruit.havePeel(); //fruit
+		Banana.havePeel(); //banana
 	}
 }
