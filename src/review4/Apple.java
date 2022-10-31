@@ -50,8 +50,8 @@ public class Apple extends Fruit{
 		System.out.println(app.name);
 		System.out.println(app.shape);
 		
-		System.out.println(Fruit.fresh);
-		System.out.println(Apple.fresh);
+		
+		
 		
 		app.grow(); //fruit
 		app.haveBenefits(); // fruit

@@ -6,7 +6,11 @@ public class Fruit {
 	String shape;
 	private String color;
 	
-	public static boolean fresh;
+	// final static variables - constants 
+	// constants we write using UPPERCASE
+	
+	final public static boolean FRESH=true;
+	final public static boolean CAN_EAT=true;
 	
 	public Fruit(String name){
 		this.name=name;
@@ -19,7 +23,7 @@ public class Fruit {
 	}
 	
 	void grow() {
-		System.out.println("All fruits grow fresh "+fresh);
+		System.out.println("All fruits grow fresh");
 	}
 	
 	public static void havePeel() {
