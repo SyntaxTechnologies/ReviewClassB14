@@ -15,6 +15,7 @@ public class Test {
 		tesla.start();
 		tesla.stop();
 		tesla.charge();
+	
 		
 		// new Car(); not possible because Car is abstract class
 	}
